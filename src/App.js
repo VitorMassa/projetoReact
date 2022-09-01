@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./view/components/Header/Header";
+import Button from 'react-bootstrap/Button';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import About from "./view/pages/Sobre/sobre";
+import Products from "./view/pages/Products/products";
+import { Provider } from "react-redux"
+import Rota from "./Route";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Rota />
   );
 }
 
